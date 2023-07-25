@@ -3,6 +3,7 @@ public class Main {
         Homework.task1();
         Homework.task2();
         Homework.task3();
+        Homework.task4();
 
     }
 }

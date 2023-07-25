@@ -28,14 +28,27 @@ public class Homework {
         List<String> cities = Arrays.asList("Moscow", "Moscow", "Moscow", "Tula", "Tula", "Voronezh", "Paris", "London", "Vologda");
         Map<String, Integer> cit = new HashMap();
 
-        for (String c : cities) {
-            if (!cit.containsKey(c)) {
-                cit.put(c, 1);
+        for (String total : cities) {
+            if (!cit.containsKey(total)) {
+                cit.put(total, 1);
             } else {
-                cit.put(c, cit.get(c) + 1);
+                cit.put(total, cit.get(total) + 1);
             }
         }
         System.out.println(cit);
+    }
+    public static void task4(){
+        List<String> strings = Arrays.asList("один", "два","два", "три", "три", "три");
+        Map<String, Integer> number = new HashMap();
+
+        for (String total : strings) {
+            if (!number.containsKey(total)) {
+                number.put(total, 1);
+            } else {
+                number.put(total, number.get(total) + 1);
+            }
+        }
+        System.out.println(number);
     }
 }
 
